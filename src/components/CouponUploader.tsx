@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import './CouponUploader.css';
 import axios from 'axios';
@@ -12,6 +12,12 @@ type Coupon = {
 const CouponUploader = () => {
   const [coupons, setCoupons] = useState<Coupon[]>([]);
   const [dragging, setDragging] = useState<Boolean>(false);
+
+  useEffect(() => {
+    if (coupons.length > 0) {
+      toast.info('coupons loaded successfully');
+    }
+  }, [coupons]);
 
   const validateCoupons = (couponsList: Coupon[]) => {
     const validCoupons = couponsList.filter((current) => {
@@ -43,7 +49,6 @@ const CouponUploader = () => {
 
       const validCoupons = validateCoupons(parsedCoupons);
       setCoupons(validCoupons);
-      toast.info('Coupons Loaded Successfully');
     };
     reader.readAsText(file);
   };
