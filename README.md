@@ -1,3 +1,19 @@
+# React Asssignment
+A coupon uploader page where user has an option to drag and drop or select the coupon files (.json). The coupons will be loaded on the page. User has a button to upload the coupons to the server.
+
+## [View Working Demo - Click Here](https://react-assignment-qp.netlify.app/)
+
+
+## Build the app
+```bash
+npm run build
+```
+Ignore the testing error on the fly
+```bash
+npx vite build || true
+```
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
