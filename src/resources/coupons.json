@@ -1,0 +1,4 @@
+[
+  { "code": "SAVE10", "discountAmount": 10, "expiryDate": "2025-12-31" },
+  { "code": "BIGDEAL", "discountAmount": 500, "expiryDate": "2025-10-15" }
+]

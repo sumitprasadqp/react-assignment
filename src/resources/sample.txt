@@ -1,0 +1,1 @@
+this is sample file which should be rejected because this is not a json file

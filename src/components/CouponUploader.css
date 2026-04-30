@@ -1,0 +1,32 @@
+.drop-zone {
+  width: 100%;
+  min-height: 300px;
+  border: 2px dashed steelblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-zone.dragging {
+  background-color: #ddd;
+  border: 2px dashed #f00;
+}
+
+button {
+  color: #fff;
+  background-color: steelblue;
+  font-size: 1.25em;
+  padding: 0.5em 2em;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0.2em 0.5em 0.3em -0.3em #333;
+  border: 1px solid #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
