@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import './CouponUploader.css';
+import axios from 'axios';
 
 type Coupon = {
   code: string;
@@ -64,6 +65,26 @@ const CouponUploader = () => {
     setDragging(false);
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target?.files?.[0];
+    handleFileDrop(file);
+  }
+
+  const handleUpload = async (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (coupons.length == 0) {
+      toast.error('No coupons to upload');
+      return;
+    }
+
+    try {
+      const res = await axios.post('https://jsonplaceholder.typicode.com/posts', coupons);
+      toast.success('Coupons Uploaded to the Server Successfully');
+    } catch (err) {
+      toast.error('Error while uploading...');
+      console.error(err);
+    }
+  };
+
   return (
     <div className="CouponUploader">
       <header>
@@ -77,9 +98,11 @@ const CouponUploader = () => {
         onDragLeave={handleDragLeave}
       >
         <p>Please drag and drop the coupons file (JSON)</p>
+        <span>or</span>
+        <input type="file" accept='application/json' onChange={handleFileChange} />
       </div>
 
-      {coupons.length == 0 && <p>No coupons to display</p>}
+      {coupons.length == 0 && <p className="no-coupons">No coupons to loaded, please load the coupons by dropping the coupon file</p>}
       {coupons.length > 0 && (
         <table>
           <thead>
@@ -103,7 +126,7 @@ const CouponUploader = () => {
         </table>
       )}
 
-      <button>Upload Coupons to Server</button>
+      <button onClick={handleUpload}>Upload Coupons to Server</button>
     </div>
   );
 };
