@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1777835841610" clover="3.2.0">
+  <project timestamp="1777835841610" name="All files">
+    <metrics statements="49" coveredstatements="49" conditionals="19" coveredconditionals="19" methods="12" coveredmethods="12" elements="80" coveredelements="80" complexity="0" loc="49" ncloc="49" packages="1" files="1" classes="1"/>
+    <file name="CouponUploader.tsx" path="/home/sumitprasad/Programming/QuestionPro/react-assignment/src/components/CouponUploader.tsx">
+      <metrics statements="49" coveredstatements="49" conditionals="19" coveredconditionals="19" methods="12" coveredmethods="12"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="44" type="stmt"/>
+      <line num="14" count="44" type="stmt"/>
+      <line num="16" count="44" type="stmt"/>
+      <line num="17" count="40" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="14" type="stmt"/>
+      <line num="22" count="44" type="stmt"/>
+      <line num="23" count="14" type="stmt"/>
+      <line num="24" count="28" type="stmt"/>
+      <line num="31" count="14" type="stmt"/>
+      <line num="34" count="44" type="stmt"/>
+      <line num="35" count="17" type="cond" truecount="4" falsecount="0"/>
+      <line num="36" count="2" type="stmt"/>
+      <line num="37" count="2" type="stmt"/>
+      <line num="40" count="15" type="stmt"/>
+      <line num="41" count="15" type="stmt"/>
+      <line num="42" count="15" type="stmt"/>
+      <line num="43" count="15" type="stmt"/>
+      <line num="45" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="50" count="14" type="stmt"/>
+      <line num="51" count="14" type="stmt"/>
+      <line num="53" count="15" type="stmt"/>
+      <line num="56" count="44" type="stmt"/>
+      <line num="57" count="3" type="stmt"/>
+      <line num="58" count="3" type="stmt"/>
+      <line num="59" count="3" type="stmt"/>
+      <line num="60" count="2" type="stmt"/>
+      <line num="63" count="44" type="stmt"/>
+      <line num="64" count="3" type="stmt"/>
+      <line num="65" count="3" type="stmt"/>
+      <line num="68" count="44" type="stmt"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
+      <line num="73" count="44" type="stmt"/>
+      <line num="74" count="14" type="stmt"/>
+      <line num="75" count="14" type="stmt"/>
+      <line num="78" count="44" type="stmt"/>
+      <line num="79" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="80" count="1" type="stmt"/>
+      <line num="81" count="1" type="stmt"/>
+      <line num="84" count="2" type="stmt"/>
+      <line num="85" count="2" type="stmt"/>
+      <line num="86" count="1" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="89" count="1" type="stmt"/>
+      <line num="93" count="44" type="stmt"/>
+      <line num="122" count="25" type="stmt"/>
+    </file>
+  </project>
+</coverage>
