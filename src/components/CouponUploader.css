@@ -1,3 +1,11 @@
+header h1 {
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+}
+
 .drop-zone {
   width: 100%;
   min-height: 300px;
@@ -29,4 +37,20 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+tr, td, th {
+  border: 1px solid steelblue;
+  text-align: center;
+}
+
+th {
+  background-color: steelblue;
+  color: #fff;
 }

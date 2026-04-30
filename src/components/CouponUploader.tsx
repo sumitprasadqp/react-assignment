@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 import './CouponUploader.css';
 
 type Coupon = {
@@ -25,7 +26,7 @@ const CouponUploader = () => {
 
   const handleFileDrop = (file: unknown) => {
     if (!file || file.type !== 'application/json') {
-      alert('Invalid file type');
+      toast.error('Invalid file type');
       throw new Error('Invalid file type');
     }
 
@@ -35,12 +36,13 @@ const CouponUploader = () => {
       const parsedCoupons = JSON.parse(e.target.result);
 
       if (!Array.isArray(parsedCoupons)) {
-        alert('Invalid format, expected an array of coupons');
+        toast.error('Invalid format, expected an array of coupons');
         throw new Error('Invalid format, expected an array of coupons');
       }
 
       const validCoupons = validateCoupons(parsedCoupons);
       setCoupons(validCoupons);
+      toast.info('Coupons Loaded Successfully');
     };
     reader.readAsText(file);
   };
